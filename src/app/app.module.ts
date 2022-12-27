@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { Navbar2Component } from './navbar2/navbar2.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { Navbar2Component } from './navbar2/navbar2.component';
     HomeComponent,
     NavbarComponent,
     ProfileComponent,
-    Navbar2Component
+    Navbar2Component,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +24,7 @@ import { Navbar2Component } from './navbar2/navbar2.component';
         {path: '', redirectTo: 'home', pathMatch: 'full'},
       {path: 'home', component: HomeComponent},
       {path: 'profile', component: ProfileComponent},
+      {path: 'menu', component: MenuComponent},
     ]),
   ],
   providers: [],
