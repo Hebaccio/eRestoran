@@ -18,13 +18,13 @@
   margin-top: 15px;
   margin-bottom: 25px;
   background-color: transparent;
+  border: 2px solid;
   border-color: rgba(255, 255, 255, 0.6);
   border-radius: 25px;
   padding: 5px 10px 5px 10px;
 }
 .menu-link:hover{
-  background-color: rgba(255, 69, 0, 0.35 );
-  filter: brightness(150%);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .menu-content{
   width: 87%;
