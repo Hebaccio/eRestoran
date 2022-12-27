@@ -1,0 +1,67 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{height: 900px;}
+header {
+  background: url('https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?w=2000');
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+.overlay{
+  width: 100%;
+  min-width: 250px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  color: #FFF;
+  text-shadow: 1px 1px 1px #333;
+  margin-bottom: 50px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 1);
+  min-width: 200px;
+  width: 150px;
+  padding: 5px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btncontainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: large;
+
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+
+  box-shadow: 0 3px 20px 0 #0000003b;
+  border: 1px white solid;
+  outline: none;
+  color: white;
+  background-color: orangered;
+
+  filter: brightness(150%);
+  transition: transform 0.2s ease-in-out;
+}
+button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  filter: brightness(200%);
+}
