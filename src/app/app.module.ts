@@ -9,6 +9,12 @@ import { ProfileComponent } from './profile/profile.component';
 import { Navbar2Component } from './navbar2/navbar2.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
+import { LogInComponent } from './log-in/log-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { EditprofileComponent } from './editprofile/editprofile.component';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import { Footer2Component } from './footer2/footer2.component';
+import { TosComponent } from './tos/tos.component';
 
 @NgModule({
   declarations: [
@@ -18,16 +24,25 @@ import { FooterComponent } from './footer/footer.component';
     ProfileComponent,
     Navbar2Component,
     MenuComponent,
-    FooterComponent
+    FooterComponent,
+    LogInComponent,
+    SignUpComponent,
+    EditprofileComponent,
+    ChangepasswordComponent,
+    Footer2Component,
+    TosComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-        {path: '', redirectTo: 'home', pathMatch: 'full'},
+      {path: '', redirectTo: 'home', pathMatch: 'full'},
       {path: 'home', component: HomeComponent},
       {path: 'profile', component: ProfileComponent},
       {path: 'menu', component: MenuComponent},
-    ]),
+      {path: 'log-in', component: LogInComponent},
+      {path: 'sign-up', component: SignUpComponent},
+      {path: 'tos', component: TosComponent},
+    ], {scrollPositionRestoration: 'enabled'}),
   ],
   providers: [],
   bootstrap: [AppComponent]
