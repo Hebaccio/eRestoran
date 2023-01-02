@@ -1,20 +1,374 @@
 <app-navbar2></app-navbar2>
 <div class="main">
   <div class="sidebar">
-    <button class="menu-link">Pizza</button>
-    <button class="menu-link">Vegetarian</button>
-    <button class="menu-link">Dessert</button>
-    <button class="menu-link">Drinks</button>
+    <button class="menu-link" (click)="openMeni1()" >Breakfast</button>
+    <button class="menu-link" (click)="openMeni2()">Soups</button>
+    <button class="menu-link" (click)="openMeni3()">Chicken</button>
+    <button class="menu-link" (click)="openMeni4()">Burgers</button>
+    <button class="menu-link" (click)="openMeni5()">Vegan</button>
+    <button class="menu-link" (click)="openMeni6()">Pasta</button>
+    <button class="menu-link" (click)="openMeni7()">Risotto</button>
+    <button class="menu-link" (click)="openMeni8()">Salads</button>
+    <button class="menu-link" (click)="openMeni9()">Fish</button>
+    <button class="menu-link" (click)="openMeni10()">Side dishes</button>
+    <button class="menu-link" (click)="openMeni11()">Dessert</button>
+    <button class="menu-link" (click)="openMeni12()">Drinks</button>
   </div>
-  <div class="menu-content">
+  <div class="menu-content1"  *ngIf="meni1">
     <div class="menu-item-container">
       <div class="menu-item">
         <div class="photo-container">
-          <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/216054.jpg">
+          <img src="https://www.elitetrainingfacility.ca/content/uploads/Ham-Tomato-Pepper-Omelette-at-Elite-Training-Facility-500x500.jpg">
         </div>
         <div class="menu-desc">
-          <h4>Pizza</h4>
-          <p>ingredients, ingredients, ingredients</p>
+          <h4>Omelette with ham and cheese</h4>
+          <h5>3 eggs, turkey ham, Edamer cheese, tomatoes</h5>
+          <p>5.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://bellyfull.net/wp-content/uploads/2020/08/Omelette-blog-3-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Omelette with cheese</h4>
+          <h5>3 eggs, Edamer cheese</h5>
+          <p>5.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://littlesunnykitchen.com/wp-content/uploads/2022/08/Veggie-Omelet-1-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Omelette with vegetables</h4>
+          <p>3 eggs, mix of vegetables</p>
+          <p>5.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="menu-content2"  *ngIf="meni2">
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://rakskitchen.net/wp-content/uploads/2013/01/8413768136_4c8e6a107b_o-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Tomato soup</h4>
+          <h5></h5>
+          <p>4.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.jocooks.com/wp-content/uploads/2018/01/instant-pot-chicken-noodle-soup-1-3-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Chicken soup</h4>
+          <h5>noodles, chicken, vegetables</h5>
+          <p>4.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://theblondcook.com/wp-content/uploads/2019/02/cream-of-mushroom-soup-3-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Mushroom soup</h4>
+          <p></p>
+          <p>4.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.cookingclassy.com/wp-content/uploads/2014/10/vegetable-soup-7-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Vegetable soup</h4>
+          <p></p>
+          <p>4.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="menu-content3" *ngIf="meni3">
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.kitchensanctuary.com/wp-content/uploads/2020/08/Easy-Chicken-Curry-square-FS-117-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Curry chicken</h4>
+          <h5>chicken, onion, pineapple, rice</h5>
+          <p>12.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://suebeehomemaker.com/wp-content/uploads/2021/03/chicken-vegetable-stir-fry-recipe-5-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Chicken wok</h4>
+          <h5>chicken, vegetables, rice, sweet-chilli sauce</h5>
+          <p>12.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://healthyfitnessmeals.com/wp-content/uploads/2018/09/Mexican-grilled-chicken-bowls-4-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Mexican chicken</h4>
+          <p>chicken, corn, beans, avocado, tomato</p>
+          <p>13.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://cdn.chefclub.tools/uploads/recipes/cover-thumbnail/944e8635-8fea-4523-87d6-614f86446d6d_ATGK7e6.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Fried chicken</h4>
+          <p>chicken, fries, sauce</p>
+          <p>8.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.bowlofdelicious.com/wp-content/uploads/2020/02/Creamy-Chicken-and-Mushrooms-1-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Chicken with mushrooms</h4>
+          <p>chicken, mushrooms, cream</p>
+          <p>10.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://cookwithnabeela.com/wp-content/uploads/2021/09/BBQ_Chicken_WIngs_Web_2.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Honey chicken</h4>
+          <p>chicken, fries, honey sauce</p>
+          <p>11.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2018/07/chilli-chicken-recipe-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Chilli chicken</h4>
+          <p>chicken, vegetables, chilli</p>
+          <p>11.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.wandercooks.com/wp-content/uploads/2022/01/japanese-nanban-chicken-3-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Chicken tartar</h4>
+          <p>chicken, salad, tartar</p>
+          <p>10.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://kitchenatics.com/wp-content/uploads/2020/08/Chicken-Fajitas-1-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Chicken fajitas</h4>
+          <p>chicken, vegetables in tortilla</p>
+          <p>12.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="menu-content4" *ngIf="meni4">
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.thewholesomedish.com/wp-content/uploads/2019/04/The-Best-Classic-Hamburgers-550-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Classic burger</h4>
+          <h5>beef, onion, pickles, lettuce, kechup, mustard, tomato</h5>
+          <p>7.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://simply-delicious-food.com/wp-content/uploads/2018/11/spicy-chicken-burgers-3-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Spicy burger</h4>
+          <h5>beef, BBQ sauce, spicy mayo, pickles, onion</h5>
+          <p>7.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2016/02/chicken-burger-recipe-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Chicken burger</h4>
+          <p>chicken, tomato, lettuce, ranch sauce</p>
+          <p>7.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://spicysouthernkitchen.com/wp-content/uploads/bbq-burger-23-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>BBQ burger</h4>
+          <p>beef, tomato, lettuce, onion, BBQ sauce, cheese</p>
+          <p>8.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://simply-delicious-food.com/wp-content/uploads/2015/07/Bacon-and-cheese-burgers-3-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Cheeseburger</h4>
+          <p>beef, cheese, lettcue, tomato, ranch sauce, pickles</p>
           <p>8.00 KM</p>
         </div>
       </div>
@@ -27,11 +381,64 @@
     <div class="menu-item-container">
       <div class="menu-item">
         <div class="photo-container">
-          <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/216054.jpg">
+          <img src="https://simply-delicious-food.com/wp-content/uploads/2016/08/Hash-brown-cheeseburgers-4-500x500.jpg">
         </div>
         <div class="menu-desc">
-          <h4>Pizza</h4>
-          <p>ingredients, ingredients, ingredients</p>
+          <h4>Cheeseburger +</h4>
+          <p>beef, 2 types of cheese, lettcue, tomato, ranch sauce, pickles</p>
+          <p>8.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://lifeloveandgoodfood.com/wp-content/uploads/2020/04/Italian-Burger_03_1200x1200-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Italiano burger</h4>
+          <p>beef, parmesan, onion, pickles, mozzarella, lettuce</p>
+          <p>9.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://aspiceabove.com/wp-content/uploads/2021/04/Blue-cheese-burger-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Blue cheeseburger</h4>
+          <p>beef, blue cheese sauce, tomato, onion, lettuce</p>
+          <p>8.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="menu-content5" *ngIf="meni5">
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://thishealthykitchen.com/wp-content/uploads/2022/01/Seitan-Burger-Feat-Image-Square-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Vegan burger</h4>
+          <h5>vegan burger, lettuce, tomato, salsa verde, onion</h5>
           <p>8.00 KM</p>
         </div>
       </div>
@@ -44,11 +451,357 @@
     <div class="menu-item-container">
       <div class="menu-item">
         <div class="photo-container">
-          <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/216054.jpg">
+          <img src="https://makeitdairyfree.com/wp-content/uploads/2020/05/the-best-high-protein-vegan-burger-2-500x500.jpg">
         </div>
         <div class="menu-desc">
-          <h4>Pizza</h4>
-          <p>ingredients, ingredients, ingredients</p>
+          <h4>Vegan cheeseburger</h4>
+          <h5>vegan burger, vegan cheese, lettuce, tomato, pepper mayo sauce</h5>
+          <p>8.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://thevegan8.com/wp-content/uploads/2019/01/easy-vegan-meatballs-oil-free2-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Vegan meatballs</h4>
+          <p>beans, sunflower seeds, oats, tomato paste,garlic</p>
+          <p>12.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.myplantifulcooking.com/wp-content/uploads/2020/11/vegan-asian-broccoli-mushroom-stir-fry-feat-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Tofu stir-fry</h4>
+          <p>tofu, muchrooms, broccoli, soy sauce</p>
+          <p>12.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://greenbowl2soul.com/wp-content/uploads/2020/05/Vietnamese-tofu-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Vietnamise tofu in tomato sauce</h4>
+          <p>tofu, tomato sauce, vegetables, rice</p>
+          <p>11.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://holycowvegan.net/wp-content/uploads/2019/12/maple-lemon-glazed-tofu-10-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Glazed lemon tofu</h4>
+          <p>tofu, lemon glaze, rice</p>
+          <p>11.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="menu-content6" *ngIf="meni6">
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.italosfarmer.com/wp-content/uploads/2021/03/Spaghetti-500x500-1.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Pasta pomodoro basilico</h4>
+          <h5>pasta, tomato sauce, basil, parmesan cheese, cherry tomato</h5>
+          <p>9.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.saltandlavender.com/wp-content/uploads/2020/10/tomato-spinach-chicken-pasta-1-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Pasta pollo</h4>
+          <h5>pasta, parmesan cheese, tomato sauce, chicken</h5>
+          <p>10.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://cookingwithmammac.com/wp-content/uploads/2018/02/1a-Spaghetti-Bolognese-Image-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Pasta bolognese</h4>
+          <p>pasta, beef, cherry tomato, basil</p>
+          <p>11.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://bakeitwithlove.com/wp-content/uploads/2022/02/cream-cheese-pasta-sq-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Pasta formaggio</h4>
+          <p>pasta, sour cream, mozzarella, parmesan, cherry tomato, basil, edam cheese</p>
+          <p>11.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://cookingwithayeh.com/wp-content/uploads/2020/09/Superfood-Pesto-Pasta-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Pasta pesto</h4>
+          <p>pasta, pesto sauce, tuna</p>
+          <p>10.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.mangiabevigodi.it/wp-content/uploads/2020/10/linguine-tonno-gamberi-pomodorini-2-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Pasta gamberi</h4>
+          <p>pasta, shrimp, cherry tomato, parsley</p>
+          <p>11.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://bakeitwithlove.com/wp-content/uploads/2021/11/frutti-di-mare-sq-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Pasta fruti di mare</h4>
+          <p>pasta, seafood, tomato, garlic, parsley</p>
+          <p>12.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.deliciousmeetshealthy.com/wp-content/uploads/2020/06/Tuna-Pasta-Salad-4-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Pasta veggie</h4>
+          <p>pasta, tuna, tomato, peppers, olives, basil, cream</p>
+          <p>11.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.dontgobaconmyheart.co.uk/wp-content/uploads/2022/05/tomato-tuna-pasta-bake-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Pasta tonno</h4>
+          <p>pasta, tuna, tomato sauce, basil</p>
+          <p>10.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="menu-content7" *ngIf="meni7">
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://inspiralized.com/wp-content/uploads/2020/01/Thai-Green-Curry-Butternut-Squash-Risotto_-2-scaled-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Curry risotto</h4>
+          <h5>rice, curry, pepers, green beans</h5>
+          <p>9.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.foodbanjo.com/wp-content/uploads/2019/07/instant-pot-chicken-risotto-2020a-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Risotto pollo</h4>
+          <h5>rice, chicken, cream, mushrooms, basil</h5>
+          <p>10.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://domesticgothess.com/wp-content/uploads/2021/02/vegan-truffled-mushroom-risotto-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Risotto fungi</h4>
+          <p>rice, cream, mushrooms, parmesan</p>
+          <p>10.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://plantbasedonabudget.com/wp-content/uploads/2013/10/Vegan-Vegetable-Risotto-Plant-Based-on-a-Budget-1-2-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Risotto veggie</h4>
+          <p>rice, vegetables, basil</p>
+          <p>9.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.saporedimare.it/wp-content/uploads/2021/05/124015647_6075.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Risotto frutti di mare</h4>
+          <p>rice, seafood, tomato sauce, basil</p>
+          <p>12.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="menu-content8" *ngIf="meni8">
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://kristineskitchenblog.com/wp-content/uploads/2021/06/bbq-chicken-salad-1200-square-084-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Chicken salad</h4>
+          <h5>chicken, lettuce, tomato, corn, cream, cabbage</h5>
+          <p>8.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.alenamenko.com/wp-content/uploads/2020/06/Greek-Yogurt-Tuna-Salad-7-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Tuna salad</h4>
+          <h5>tuna, lettuce, cucumber, parsley, tomato, greek yogurt</h5>
           <p>8.00 KM</p>
         </div>
       </div>
@@ -61,12 +814,632 @@
     <div class="menu-item-container">
       <div class="menu-item">
         <div class="photo-container">
-          <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/216054.jpg">
+          <img src="https://moorlandseater.com/wp-content/uploads/2018/12/caesar-salad-moorlands-eater-183714-500x500.jpg">
         </div>
         <div class="menu-desc">
-          <h4>Pizza</h4>
-          <p>ingredients, ingredients, ingredients</p>
+          <h4>Cesar's salad</h4>
+          <p>bagguette, lettuce, garlic, parmesan</p>
+          <p>9.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://downshiftology.com/wp-content/uploads/2018/08/Greek-Salad-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Mediterranean salad</h4>
+          <p>tomato, cucumber, onion, peppers, olives</p>
           <p>8.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.thesophisticatedcaveman.com/wp-content/uploads/2019/09/Hawaiian-Shrimp-Salad-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Seafood salad</h4>
+          <p>shrimp, mayo, cilantro, peppers</p>
+          <p>8.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://sweetpeasandsaffron.com/wp-content/uploads/2019/04/Crunchy-Rainbow-Thai-Salad-4-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Thai salad</h4>
+          <p>napa cabbage, red cabbage, peanuts, peppers</p>
+          <p>8.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="menu-content9" *ngIf="meni9">
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.livinglou.com/wp-content/uploads/2010/08/oven-baked-trout-fillets-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Classic trout</h4>
+          <h5>trout fillet, chard, garlic marinade</h5>
+          <p>14.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://honest-food.net/wp-content/uploads/2017/09/broiled-trout-recipe-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Nordic trout</h4>
+          <h5>nordic trout, parsley, marinade</h5>
+          <p>17.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.thetastychilli.com/wp-content/uploads/2022/01/grilled-calamari-rings-lemon-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Grilled squid</h4>
+          <p>squid, garlic marinade, potatoes</p>
+          <p>16.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.cookinwithmima.com/wp-content/uploads/2020/06/grilled-shrimp-skewers-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Grilled shrimp</h4>
+          <p>shrimp, sweet and spicy sauce, lemon</p>
+          <p>13.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="menu-content10" *ngIf="meni10">
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.jessicagavin.com/wp-content/uploads/2019/11/twice-baked-potatoes-8-1200-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Baked potatoes</h4>
+          <h5>potatoes, cream, spring onion</h5>
+          <p>4.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.wholesomeyum.com/wp-content/uploads/2019/08/wholesomeyum-low-carb-rutabaga-fries-recipe-11-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Fries</h4>
+          <h5></h5>
+          <p>2.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.airfryerrecipes.com/wp-content/uploads/Air-Fryer-Curly-Fries-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Curly fries</h4>
+          <h5></h5>
+          <p>2.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.eatingonadime.com/wp-content/uploads/2021/05/fried-onion-rings-7-2-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Onion rings</h4>
+          <p>fried onion</p>
+          <p>3.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="menu-content11" *ngIf="meni11">
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.cookingclassy.com/wp-content/uploads/2019/10/chocolate-cake-3-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Chocolate cake</h4>
+          <h5>chocolate, butter, eggs</h5>
+          <p>3.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.cookingclassy.com/wp-content/uploads/2019/11/cheesecake-8-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Cheesecake</h4>
+          <h5>butter, mascarpone, berries</h5>
+          <p>3.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://itsybitsykitchen.com/wp-content/uploads/2018/08/mango-coconut-cake-2-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Mango coconut cake</h4>
+          <h5>eggs, mango, coconut</h5>
+          <p>3.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://laughingspatula.com/wp-content/uploads/2022/09/Chocolate-Cherry-Cake-hero-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Chocolate cherry cake</h4>
+          <p>eggs, chocolate, sour cherry</p>
+          <p>3.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.abeautifulplate.com/wp-content/uploads/2018/02/easy-chocolate-mousse-5-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Chocolate mouse</h4>
+          <p>eggs, chocolate, almonds, cream</p>
+          <p>4.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.cookingclassy.com/wp-content/uploads/2014/11/red-velvet-cake-5-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Red velvet cake</h4>
+          <p>eggs, chocolate, cream</p>
+          <p>3.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://grandbaby-cakes.com/wp-content/uploads/2018/11/caramel-cake-recipe-1-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Caramel cake</h4>
+          <p>eggs, caramel</p>
+          <p>3.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://bakingamoment.com/wp-content/uploads/2016/03/IMG_8026-coconut-cake-500x500.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Coconut cake</h4>
+          <p>eggs, coconut, cream</p>
+          <p>3.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="menu-content12" *ngIf="meni12">
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.aquariusvils.com/wp-content/uploads/2022/02/italian-espresso-coffee-isolated-white-background-188153551.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Espresso</h4>
+          <h5></h5>
+          <p>2.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.aquariusvils.com/wp-content/uploads/2022/02/cuban-espresso-cappuccino-caffe-macchiato-coffee-coffee-1.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Espress macchiato</h4>
+          <h5></h5>
+          <p>2.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.aquariusvils.com/wp-content/uploads/2022/02/cappuccino-coffee-white-cup-25923387.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Cappuccino</h4>
+          <h5></h5>
+          <p>3.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.aquariusvils.com/wp-content/uploads/2022/02/glass-cup-tasty-caramel-macchiato-white-background-141043358.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Late</h4>
+          <h5></h5>
+          <p>4.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.aquariusvils.com/wp-content/uploads/2022/02/istockphoto-500430658-612x612-1.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Ice coffee</h4>
+          <h5></h5>
+          <p>4.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.aquariusvils.com/wp-content/uploads/2022/02/istockphoto-171144208-612x612-1.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Tea</h4>
+          <h5></h5>
+          <p>2.00 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.aquariusvils.com/wp-content/uploads/2022/02/hot-cokolada.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Hot chocolate</h4>
+          <h5></h5>
+          <p>4.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.dragstor.ba/wp-content/uploads/2022/04/ART003193-430x430.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Water</h4>
+          <h5></h5>
+          <p>1.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.dragstor.ba/wp-content/uploads/2022/04/ART003192.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Mineral water</h4>
+          <h5></h5>
+          <p>1.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://manhattanwater.com/wp-content/uploads/2016/10/coke-1.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Coca-cola</h4>
+          <h5></h5>
+          <p>2.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.casillowine.com/3652-large_default/fanta-vetro.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Fanta</h4>
+          <p></p>
+          <p>2.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.casillowine.com/4656-large_default/sprite-vetro.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Sprite</h4>
+          <p></p>
+          <p>2.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="http://cdn.getir.com/product/5ceae03ac461e70001cc9840_tr_1560287117744.jpeg">
+        </div>
+        <div class="menu-desc">
+          <h4>Cappy Apple</h4>
+          <p></p>
+          <p>2.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.aquariusvils.com/wp-content/uploads/2022/02/cappy-narandza.jpeg">
+        </div>
+        <div class="menu-desc">
+          <h4>Cappy Orange</h4>
+          <p></p>
+          <p>2.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.aquariusvils.com/wp-content/uploads/2022/02/schweppes-biter-lemon-rgb-250ml-01-1.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Schwepps Bitter Lemon</h4>
+          <p></p>
+          <p>2.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.aquariusvils.com/wp-content/uploads/2022/02/schweppes-tangarine-rgb-250ml-01-1.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Schwepps Tangerine</h4>
+          <p></p>
+          <p>2.50 KM</p>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button class="add-button">
+          <p>+</p>
+        </button>
+      </div>
+    </div>
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <div class="photo-container">
+          <img src="https://www.aquariusvils.com/wp-content/uploads/2022/02/fdea0b1e-c072-46d6-be92-f9ec6007d604.__CR00300300_PT0_SX300_V1___-1.jpg">
+        </div>
+        <div class="menu-desc">
+          <h4>Schwepps Tonic</h4>
+          <p></p>
+          <p>2.50 KM</p>
         </div>
       </div>
       <div class="add-button-container">
@@ -77,3 +1450,4 @@
     </div>
   </div>
 </div>
+

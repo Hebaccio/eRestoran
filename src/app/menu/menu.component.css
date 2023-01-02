@@ -7,16 +7,15 @@
   background-color: rgba(0, 0, 0, 0.18);
   padding-top: 20px;
   width: 13%;
-  text-align: center;
 }
 .menu-link{
   display: block;
-  text-align: center;
   font-size: large;
   color: white;
   margin: 0 auto;
   margin-top: 15px;
   margin-bottom: 25px;
+  width: 60%;
   background-color: transparent;
   border: 2px solid;
   border-color: rgba(255, 255, 255, 0.6);
@@ -26,7 +25,66 @@
 .menu-link:hover{
   background-color: rgba(0, 0, 0, 0.3);
 }
-.menu-content{
+.menu-content1{
+  width: 87%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+}
+.menu-content2{
+  width: 87%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+}
+.menu-content3{
+  width: 87%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-content4{
+  width: 87%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-content5{
+  width: 87%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-content6{
+  width: 87%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-content7{
+  width: 87%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-content8{
+  width: 87%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-content9{
+  width: 87%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+}
+.menu-content10{
+  width: 87%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+}
+.menu-content11{
+  width: 87%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-content12{
   width: 87%;
   display: flex;
   flex-wrap: wrap;
@@ -45,6 +103,9 @@
   height: 100%;
   border-radius: 25px;
   display: flex;
+}
+.menu-item h5{
+  font-weight: normal;
 }
 .add-button-container{
   width: 100px;
@@ -81,7 +142,31 @@
 .menu-desc{
   width: 68%;
 }
-
+@media only screen and (min-width: 2500px){
+  .menu-content5{
+    height: 500px;
+  }
+  .menu-content7{
+    height: 500px;
+  }
+  .menu-content8{
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 1380px){
+  .sidebar{
+    width: 25%;
+  }
+  .menu-content2{
+    height: fit-content;
+  }
+  .menu-content9{
+    height: fit-content;
+  }
+  .menu-content10{
+    height: fit-content;
+  }
+}
 @media only screen and (max-width: 820px){
   .main{
     display: block;
@@ -90,6 +175,13 @@
     width: 100%;
     display: flex;
     overflow-x: scroll;
+  }
+  .menu-link{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .menu-content1{
+    height: 100%;
   }
 }
 @media only screen and (max-width: 600px){
