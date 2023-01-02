@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-profile',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class ProfileComponent {
 
+  constructor(private router: Router) { }
+
+  EditPassword() {
+    this.router.navigateByUrl("update-password-email");
+  }
+  EditProfile() {
+    this.router.navigateByUrl("edit-profile");
+  }
 }

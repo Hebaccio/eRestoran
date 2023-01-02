@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import {Router} from "@angular/router";
 
 @Component({
-  selector: 'app-editprofile',
-  templateUrl: './editprofile.component.html',
-  styleUrls: ['./editprofile.component.css']
+  selector: 'app-updatepassword',
+  templateUrl: './updatepassword.component.html',
+  styleUrls: ['./updatepassword.component.css']
 })
-export class EditprofileComponent {
+export class UpdatepasswordComponent {
 
   constructor(private router: Router) { }
 

@@ -15,6 +15,7 @@ import { EditprofileComponent } from './editprofile/editprofile.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { Footer2Component } from './footer2/footer2.component';
 import { TosComponent } from './tos/tos.component';
+import { UpdatepasswordComponent } from './updatepassword/updatepassword.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TosComponent } from './tos/tos.component';
     EditprofileComponent,
     ChangepasswordComponent,
     Footer2Component,
-    TosComponent
+    TosComponent,
+    UpdatepasswordComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +44,9 @@ import { TosComponent } from './tos/tos.component';
       {path: 'log-in', component: LogInComponent},
       {path: 'sign-up', component: SignUpComponent},
       {path: 'tos', component: TosComponent},
+      {path: 'update-password-email', component: UpdatepasswordComponent},
+      {path: 'update-password-username', component: ChangepasswordComponent},
+      {path: 'edit-profile', component: EditprofileComponent}
     ], {scrollPositionRestoration: 'enabled'}),
   ],
   providers: [],

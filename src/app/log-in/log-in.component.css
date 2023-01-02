@@ -114,6 +114,12 @@
   padding-top: 10px;
 }
 
+a{
+  color: cornflowerblue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .btn{
   display: flex;
   justify-content: center;
