@@ -30,37 +30,50 @@
   display: flex;
   flex-wrap: wrap;
   height: 500px;
+  padding-bottom: 10px;
 }
 .menu-content2{
   width: 87%;
   display: flex;
   flex-wrap: wrap;
   height: 500px;
+  padding-bottom: 10px;
+
 }
 .menu-content3{
   width: 87%;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 10px;
+
 }
 .menu-content4{
   width: 87%;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 10px;
+
 }
 .menu-content5{
   width: 87%;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 10px;
+
 }
 .menu-content6{
   width: 87%;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 10px;
+
 }
 .menu-content7{
   width: 87%;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 10px;
+
 }
 .menu-content8{
   width: 87%;
@@ -72,22 +85,30 @@
   display: flex;
   flex-wrap: wrap;
   height: 500px;
+  padding-bottom: 10px;
+
 }
 .menu-content10{
   width: 87%;
   display: flex;
   flex-wrap: wrap;
   height: 500px;
+  padding-bottom: 10px;
+
 }
 .menu-content11{
   width: 87%;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 10px;
+
 }
 .menu-content12{
   width: 87%;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 10px;
+
 }
 .menu-item-container{
   height: 150px;

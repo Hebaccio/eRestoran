@@ -1,1 +1,27 @@
-<p>profile works!</p>
+<app-navbar2></app-navbar2>
+
+<div class="main">
+  <div class="empty"></div>
+  <div class="profile-container">
+    <h2>Your profile</h2>
+    <div class="infocontainer">
+      <h3>Email: </h3>
+      <h4>youremail@gmail.com</h4>
+    </div>
+    <div class="infocontainer">
+      <h3>Username: </h3>
+      <h4>@YourUsername</h4>
+    </div>
+    <div class="infocontainer">
+      <h3>Phone number: </h3>
+      <h4>064-XXX-XXX</h4>
+    </div>
+    <div class="btncontainer">
+      <button class="editbutton" (click)="EditProfile()">Edit profile</button>
+      <button class="editbutton" (click)="EditPassword()">Change password</button>
+    </div>
+  </div>
+  <div class="empty"></div>
+</div>
+
+<app-footer2></app-footer2>

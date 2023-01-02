@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as path from "path";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-navbar2',
@@ -8,5 +8,17 @@ import * as path from "path";
 })
 export class Navbar2Component {
 
+  constructor(private router: Router) {
+  }
+
+  OpenHome() {
+    this.router.navigateByUrl("home");
+  }
+  OpenMenu() {
+    this.router.navigateByUrl("menu");
+  }
+  OpenProfile() {
+    this.router.navigateByUrl("profile");
+  }
 
 }
