@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-menu',
@@ -20,7 +21,7 @@ export class MenuComponent implements OnInit{
   meni11:boolean=false;
   meni12:boolean=false;
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit(): void {
@@ -193,5 +194,10 @@ export class MenuComponent implements OnInit{
     this.meni10=false;
     this.meni11=false;
     this.meni12=true;
+  }
+
+  openOrderView() {
+    this.router.navigateByUrl("order-view");
+
   }
 }

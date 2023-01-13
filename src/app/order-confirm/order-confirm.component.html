@@ -1,0 +1,81 @@
+<app-navbar2></app-navbar2>
+<div class="main">
+  <div class="order-info">
+    <div class="order">
+      <div class="order-title">
+        <h3>Order number 3</h3>
+        <h4>13. 01. 2023.</h4>
+      </div>
+      <div class="order-items">
+        <div class="item">
+          <h4>Mexican chicken (1x)</h4>
+          <p>13.50 KM</p>
+        </div>
+        <div class="item">
+          <h4>Thai salad (1x)</h4>
+          <p>8.50 KM</p>
+        </div>
+      </div>
+      <div class="order-total">
+        <p>Order: 22.00 KM</p>
+        <p>Delivery: 3.00 KM</p>
+        <p style="font-weight: bold">Total: 25.00 KM</p>
+      </div>
+    </div>
+    <div class="comment-container">
+      <h3>Add comment</h3>
+      <div class="comment">
+        <input class="input-comment" role="textbox" contenteditable>
+      </div>
+    </div>
+  </div>
+  <div class="person-info">
+    <div class="paymet-container">
+      <div class="payment-type">
+        <h3>Payment method:</h3>
+        <button class="payment-button">Cash</button>
+        <button class="payment-button" (click)="showDetails()">Card</button>
+      </div>
+      <div class="payment-details">
+        <h3>Payment details</h3>
+        <div class="card-info">
+          <p>Card number</p>
+          <input class="input-card" placeholder="Valid card number">
+        </div>
+        <div class="date-code">
+          <div class="date">
+            <p>Expiration date</p>
+            <input class="input-date" placeholder="MM/YY">
+          </div>
+          <div class="date">
+            <p>CV code</p>
+            <input class="input-code" placeholder="CVC">
+          </div>
+        </div>
+        <div class="owner-info">
+          <p>Card owner</p>
+          <input class="input-card" placeholder="Name">
+        </div>
+      </div>
+    </div>
+    <div class="delivery">
+      <div class="options">
+        <button class="option-button">Pick up order</button>
+        <button class="option-button" (click)="showMore()">Delivery</button>
+      </div>
+      <div class="address">
+        <p>Address</p>
+        <input class="input-address" placeholder="Address">
+      </div>
+    </div>
+  </div>
+  <div class="confirm-container">
+    <div class="cancel-button">
+      <button class="cancel">Cancel order</button>
+    </div>
+    <div class="confirm-button">
+      <button class="confirm">Confirm order</button>
+    </div>
+  </div>
+</div>
+<app-footer2></app-footer2>

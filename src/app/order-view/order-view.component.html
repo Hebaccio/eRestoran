@@ -1,0 +1,91 @@
+<app-navbar2></app-navbar2>
+<div class="main">
+  <div class="container">
+    <div class="title">
+      <h3>Order number 3</h3>
+    </div>
+    <div class="order-container">
+      <div class="order">
+        <div class="picture">
+          <img src="https://healthyfitnessmeals.com/wp-content/uploads/2018/09/Mexican-grilled-chicken-bowls-4-500x500.jpg">
+        </div>
+        <div class="info">
+          <div class="desc">
+            <h4>Mexican chicken</h4>
+            <p>chicken, corn, beans, avocado, tomato</p>
+          </div>
+          <div class="remove-ing1">
+            <p>Remove ingredients</p>
+            <select class="select" id="ingredients1">
+              <option class="izbor" value="None">None</option>
+              <option class="izbor" value="Tomato">Tomato</option>
+              <option class="izbor" value="Avocado">Avocado</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="add-remove">
+          <button class="remove">-</button>
+          <div class="number">
+            <p>1</p>
+          </div>
+          <button class="add">+</button>
+        </div>
+        <div class="delete-container">
+          <button class="delete">Remove</button>
+        </div>
+      </div>
+    </div>
+    <div class="order-container">
+      <div class="order">
+        <div class="picture">
+          <img src="https://sweetpeasandsaffron.com/wp-content/uploads/2019/04/Crunchy-Rainbow-Thai-Salad-4-500x500.jpg">
+        </div>
+        <div class="info">
+          <div class="desc">
+            <h4>Thai salad</h4>
+            <p>napa cabbage, red cabbage, peanuts, peppers</p>
+          </div>
+          <div class="remove-ing2">
+            <p>Remove ingredients</p>
+            <select class="select" id="ingredients2">
+              <option class="izbor" value="None">None</option>
+              <option class="izbor" value="Peanuts">Peanuts</option>
+              <option class="izbor" value="Sesame oil">Sesame oil</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="add-remove">
+          <button class="remove">-</button>
+          <div class="number">
+            <p>1</p>
+          </div>
+          <button class="add">+</button>
+        </div>
+        <div class="delete-container">
+          <button class="delete">Remove</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cancel-total">
+    <div class="cancel-container">
+      <button class="cancel">Cancel order</button>
+    </div>
+    <div class="total-container">
+      <h4 style="font-weight: bold">Total: 22.00 KM</h4>
+    </div>
+  </div>
+  <div class="back-next">
+    <div class="back">
+      <button class="back-button" (click)="goBack()">Back</button>
+    </div>
+    <div class="next">
+      <button class="next-button" (click)="goNext()">Order</button>
+    </div>
+  </div>
+</div>
+<app-footer2></app-footer2>

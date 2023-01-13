@@ -16,6 +16,9 @@ import { ChangepasswordComponent } from './changepassword/changepassword.compone
 import { Footer2Component } from './footer2/footer2.component';
 import { TosComponent } from './tos/tos.component';
 import { UpdatepasswordComponent } from './updatepassword/updatepassword.component';
+import { OrderConfirmComponent } from './order-confirm/order-confirm.component';
+import { OrderViewComponent } from './order-view/order-view.component';
+import { OrdersComponent } from './orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -33,10 +36,9 @@ import { UpdatepasswordComponent } from './updatepassword/updatepassword.compone
     Footer2Component,
     TosComponent,
     UpdatepasswordComponent,
-    Footer2Component,
-    Footer2Component,
-    Footer2Component,
-    Footer2Component
+    OrderConfirmComponent,
+    OrderViewComponent,
+    OrdersComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,10 @@ import { UpdatepasswordComponent } from './updatepassword/updatepassword.compone
       {path: 'tos', component: TosComponent},
       {path: 'update-password-email', component: UpdatepasswordComponent},
       {path: 'update-password-username', component: ChangepasswordComponent},
-      {path: 'edit-profile', component: EditprofileComponent}
+      {path: 'edit-profile', component: EditprofileComponent},
+      {path: 'order-confirm', component: OrderConfirmComponent},
+      {path: 'order-view', component: OrderViewComponent},
+      {path: 'orders', component: OrdersComponent}
     ], {scrollPositionRestoration: 'enabled'}),
   ],
   providers: [],
