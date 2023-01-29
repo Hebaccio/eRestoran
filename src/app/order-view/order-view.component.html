@@ -4,7 +4,7 @@
     <div class="title">
       <h3>Order number 3</h3>
     </div>
-    <div class="order-container">
+    <div class="order-container" *ngIf="prikaziOrder1">
       <div class="order">
         <div class="picture">
           <img src="https://healthyfitnessmeals.com/wp-content/uploads/2018/09/Mexican-grilled-chicken-bowls-4-500x500.jpg">
@@ -26,18 +26,18 @@
       </div>
       <div class="buttons">
         <div class="add-remove">
-          <button class="remove">-</button>
+          <button class="remove" (click)="smanjiKolicinu1()">-</button>
           <div class="number">
-            <p>1</p>
+            <p>{{kolicina1}}</p>
           </div>
-          <button class="add">+</button>
+          <button class="add" (click)="povecajKolicinu1()">+</button>
         </div>
         <div class="delete-container">
-          <button class="delete">Remove</button>
+          <button class="delete" (click)="ukloni1()">Remove</button>
         </div>
       </div>
     </div>
-    <div class="order-container">
+    <div class="order-container" *ngIf="prikaziOrder2">
       <div class="order">
         <div class="picture">
           <img src="https://sweetpeasandsaffron.com/wp-content/uploads/2019/04/Crunchy-Rainbow-Thai-Salad-4-500x500.jpg">
@@ -59,14 +59,14 @@
       </div>
       <div class="buttons">
         <div class="add-remove">
-          <button class="remove">-</button>
+          <button class="remove" (click)="smanjiKolicinu2()">-</button>
           <div class="number">
-            <p>1</p>
+            <p>{{kolicina2}}</p>
           </div>
-          <button class="add">+</button>
+          <button class="add" (click)="povecajKolicinu2()">+</button>
         </div>
         <div class="delete-container">
-          <button class="delete">Remove</button>
+          <button class="delete" (click)="ukloni2()">Remove</button>
         </div>
       </div>
     </div>

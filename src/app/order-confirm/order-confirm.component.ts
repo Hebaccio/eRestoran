@@ -1,4 +1,5 @@
 import {Component, Inject} from '@angular/core';
+import {FormBuilder, FormGroup, isFormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-order-confirm',
@@ -10,7 +11,7 @@ export class OrderConfirmComponent {
   show: boolean= false;
   details: boolean=false;
 
-  constructor() {
+  constructor(private fb: FormBuilder) {
   }
 
   showMore() {
@@ -19,5 +20,13 @@ export class OrderConfirmComponent {
 
   showDetails() {
     this.details=true;
+  }
+
+  cancelOrder() {
+    alert('Order canceled.');
+  }
+
+  confirmOrder() {
+    alert('Order confirmed!');
   }
 }

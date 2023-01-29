@@ -40,7 +40,7 @@
         <h3>Payment details</h3>
         <div class="card-info">
           <p>Card number</p>
-          <input class="input-card" placeholder="Valid card number">
+           <input class="input-card" formControlName="cardInput" placeholder="Valid card number">
         </div>
         <div class="date-code">
           <div class="date">
@@ -71,11 +71,12 @@
   </div>
   <div class="confirm-container">
     <div class="cancel-button">
-      <button class="cancel">Cancel order</button>
+      <button class="cancel" (click)="cancelOrder()">Cancel order</button>
     </div>
     <div class="confirm-button">
-      <button class="confirm">Confirm order</button>
+      <button class="confirm" (click)="confirmOrder()">Confirm order</button>
     </div>
   </div>
 </div>
+
 <app-footer2></app-footer2>

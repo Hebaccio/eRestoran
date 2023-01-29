@@ -20,6 +20,7 @@ export class MenuComponent implements OnInit{
   meni10:boolean=false;
   meni11:boolean=false;
   meni12:boolean=false;
+  order: boolean=false;
 
   constructor(private router: Router) {
   }
@@ -198,6 +199,9 @@ export class MenuComponent implements OnInit{
 
   openOrderView() {
     this.router.navigateByUrl("order-view");
+  }
 
+  showOrder() {
+    this.order=true;
   }
 }
