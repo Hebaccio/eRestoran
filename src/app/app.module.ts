@@ -36,7 +36,7 @@ import { UpdatepasswordComponent } from './updatepassword/updatepassword.compone
     Footer2Component,
     Footer2Component,
     Footer2Component,
-    Footer2Component
+    Footer2Component,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +50,7 @@ import { UpdatepasswordComponent } from './updatepassword/updatepassword.compone
       {path: 'tos', component: TosComponent},
       {path: 'update-password-email', component: UpdatepasswordComponent},
       {path: 'update-password-username', component: ChangepasswordComponent},
-      {path: 'edit-profile', component: EditprofileComponent}
+      {path: 'edit-profile', component: EditprofileComponent},
     ], {scrollPositionRestoration: 'enabled'}),
   ],
   providers: [],

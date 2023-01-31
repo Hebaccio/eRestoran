@@ -24,6 +24,9 @@ export class HomeComponent implements OnInit  {
   OpenProfile() {
     this.router.navigateByUrl("profile");
   }
+  OpenOrders() {
+    this.router.navigateByUrl("orders");
+  }
 
   OpenLogIn() {
     this.router.navigateByUrl("log-in");

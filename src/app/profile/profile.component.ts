@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Router} from "@angular/router";
 
 @Component({
@@ -8,7 +8,13 @@ import {Router} from "@angular/router";
 })
 export class ProfileComponent {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+    //@ts-ignore
+    this.email=sessionStorage.getItem('email');
+  }
+
+  @Input()
+  email:string='';
 
   EditPassword() {
     this.router.navigateByUrl("update-password-email");

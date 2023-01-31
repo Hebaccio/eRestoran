@@ -8,7 +8,9 @@ import {Router} from "@angular/router";
 })
 export class EditprofileComponent {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+    sessionStorage.setItem('email', 'newemail');
+  }
 
   passwordType1: string = 'password';
   passwordShown: boolean = false;
@@ -26,5 +28,7 @@ export class EditprofileComponent {
   EditPassword() {
     this.router.navigateByUrl("update-password-username");
   }
+
+
 
 }

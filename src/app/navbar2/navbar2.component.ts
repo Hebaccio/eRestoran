@@ -20,5 +20,8 @@ export class Navbar2Component {
   OpenProfile() {
     this.router.navigateByUrl("profile");
   }
+  OpenOrders() {
+    this.router.navigateByUrl("orders");
+  }
 
 }
