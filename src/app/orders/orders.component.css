@@ -1,0 +1,68 @@
+.main{
+  display: block;
+  height: fit-content;
+  background-color: #918e8e;
+  padding-bottom: 30px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.content h2{
+  margin-top: 0;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+.order-container{
+  padding-top: 15px;
+  border-top: 1px solid black;
+  display: flex;
+  margin-bottom: 30px;
+}
+.content{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.order-container h3{
+  margin-top: 15px;
+  margin-left: 4%;
+}
+.order{
+  display: flex;
+}
+.date{
+  margin-left: 150px;
+}
+.items{
+  margin-left: 150px;
+}
+.price{
+  margin-left: 150px;
+}
+.more{
+  margin-top: 5px;
+  margin-left: 200px;
+}
+.more2{
+  margin-top: 5px;
+  margin-left: 192px;
+}
+.expand{
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #f8811f;
+  color: white;
+  border-color: transparent;
+  font-weight: bold;
+  margin-right: 11%;
+}
+
+@media screen and (max-width: 1746px){
+  .main{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .order-container h3{
+    margin-left: 30px;
+  }
+}

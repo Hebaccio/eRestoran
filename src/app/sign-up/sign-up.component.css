@@ -1,7 +1,8 @@
 .maindiv{
   display: flex;
   background-color: #918e8e;
-  height: 1000px;
+  height: 910px;
+  align-items: center;
 }
 
 .signup{

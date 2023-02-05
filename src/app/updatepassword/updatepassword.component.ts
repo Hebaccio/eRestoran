@@ -23,8 +23,4 @@ export class UpdatepasswordComponent {
     }
   }
 
-  EditPassword() {
-    this.router.navigateByUrl("update-password-username");
-  }
-
 }

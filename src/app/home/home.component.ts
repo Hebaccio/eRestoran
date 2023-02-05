@@ -22,10 +22,8 @@ export class HomeComponent implements OnInit  {
     this.router.navigateByUrl("menu");
   }
   OpenProfile() {
-    this.router.navigateByUrl("profile");
-  }
-  OpenOrders() {
-    this.router.navigateByUrl("orders");
+    this.router.navigateByUrl("log-in");
+    //this.router.navigateByUrl("profile");
   }
 
   OpenLogIn() {
@@ -33,5 +31,9 @@ export class HomeComponent implements OnInit  {
   }
   OpenSignUp() {
     this.router.navigateByUrl("sign-up");
+  }
+  OpenOrders() {
+    this.router.navigateByUrl("log-in");
+    //this.router.navigateByUrl("orders");
   }
 }

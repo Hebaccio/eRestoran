@@ -1,11 +1,8 @@
-<app-navbar2></app-navbar2>
-
-
 <div class="maindiv">
   <div class="signup">
     <div class="title">Log-in</div>
     <div class="group">
-      <label class="label">Username:</label>
+      <label class="label">Email:</label>
       <input class="input"/>
     </div>
 
@@ -18,7 +15,7 @@
       <p class="form-check-label" style="color: white">
         Forgot your password?<a (click)="EditPassword()">Update here!</a>
       </p>
-      <button type="button" class="btn">Log-in</button>
+      <button type="button" class="btn" (click)="LogIn()">Log-in</button>
     </div>
     <div class="login">
       <label class="label-login">Don't have an account?</label>

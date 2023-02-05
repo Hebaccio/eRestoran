@@ -2,18 +2,22 @@ import { Component } from '@angular/core';
 import {Router} from "@angular/router";
 
 @Component({
-  selector: 'app-navbar2',
-  templateUrl: './navbar2.component.html',
-  styleUrls: ['./navbar2.component.css']
+  selector: 'app-home2',
+  templateUrl: './home2.component.html',
+  styleUrls: ['./home2.component.css']
 })
-export class Navbar2Component {
+export class Home2Component {
 
   constructor(private router: Router) {
   }
 
-  OpenHome() {
-    this.router.navigateByUrl("home");
+  ngOnInit(): void {
   }
+
+  goToLink(url: string) {
+    window.open(url, "");
+  }
+
   OpenMenu() {
     this.router.navigateByUrl("menu");
   }
@@ -23,4 +27,5 @@ export class Navbar2Component {
   OpenOrders() {
     this.router.navigateByUrl("orders");
   }
+
 }

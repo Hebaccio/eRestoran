@@ -33,4 +33,7 @@ export class LogInComponent implements OnInit {
   EditPassword() {
     this.router.navigateByUrl("update-password-email");
   }
+  LogIn() {
+    this.router.navigateByUrl("profile");
+  }
 }

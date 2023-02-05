@@ -1,0 +1,268 @@
+.main{
+  display: block;
+  height: fit-content;
+  background-color: #918e8e;
+  padding-bottom: 30px;
+}
+.title h3{
+  margin-top: 0;
+  padding-top: 50px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.order-container{
+  display: flex;
+  margin-bottom: 20px;
+}
+.order{
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.18);
+  height: fit-content;
+  padding: 5px 30px 10px 20px;
+  width: 35%;
+  display: flex;
+}
+.picture{
+  width: 25%;
+  height: 100%;
+  border-right: 5px;
+  border-right-color: #333333;
+  padding-left: 10px;
+  padding-top: 17px;
+}
+.picture img{
+  width: 90%;
+  border-radius: 15px;
+}
+.info{
+  text-align: right;
+  margin-right: 20px;
+  margin-left: auto;
+  display: block;
+}
+.remove-ing1{
+  display: flex;
+  margin-right: 0;
+  margin-left: auto;
+  text-align: right;
+}
+.remove-ing2{
+  display: flex;
+  margin-right: 0;
+  margin-left: auto;
+  width: 90%;
+  text-align: right;
+}
+.remove-ing1 label{
+  margin-top: 16px;
+  margin-left: 10px;
+  vertical-align: center;
+}
+.remove-ing2 label{
+  margin-top: 16px;
+  margin-left: 10px;
+  vertical-align: center;
+}
+.buttons{
+  margin-left: 20px;
+  vertical-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.add-remove{
+  display: flex;
+}
+.remove{
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #f8811f;
+  color: white;
+  border-color: transparent;
+  font-weight: bold;
+}
+.select{
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-left: auto;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.18);
+  height: 40px;
+}
+.izbor{
+  text-align: center;
+}
+.ingredients1{
+  border-radius: 10px;
+}
+.ingredients2{
+  border-radius: 10px;
+}
+.number{
+  background-color: rgba(0, 0, 0, 0.18);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 15px;
+  color: white;
+}
+.number p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.add{
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #f8811f;
+  color: white;
+  border-color: transparent;
+  font-weight: bold;
+}
+.delete-container{
+  margin-top: 10px;
+  text-align: center;
+}
+.delete{
+  width: 80px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #e14242;
+  color: white;
+  border-color: transparent;
+}
+.cancel-total{
+  padding-top: 20px;
+  margin-top: 20px;
+  display: flex;
+  margin-left: 20px;
+}
+.cancel{
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #e14242;
+  color: white;
+  border-color: transparent;
+}
+.total-container{
+  border-top: 1px solid black;
+  padding-top: 10px;
+  margin-right: 20px;
+  margin-left: 220px;
+  margin-bottom: 30px;
+}
+.total-container h4{
+  margin-top: 0px;
+}
+.back-next{
+  display: flex;
+  width: 35%;
+}
+.back-button{
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: orangered;
+  filter: brightness(150%);
+  color: white;
+  border-color: transparent;
+  margin-left: 20px;
+}
+.next-button{
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: orangered;
+  filter: brightness(150%);
+  color: white;
+  border-color: transparent;
+  margin-left: 240px;
+}
+
+@media only screen and (min-width: 1815px){
+  .main{
+    padding-left: 35%;
+    padding-right: 0;
+  }
+  .total-container{
+    margin-left: 300px;
+  }
+  .next-button{
+    margin-left: 320px;
+  }
+}
+@media only screen and (max-width: 1815px){
+  .main{
+    padding-left: 30%;
+    padding-right: 0;
+  }
+  .total-container{
+    margin-left: 150px;
+  }
+  .next-button{
+    margin-left: 170px;
+  }
+}
+@media only screen and (max-width: 1390px){
+  .main{
+    padding-left: 10%;
+    padding-right: 0;
+  }
+  .total-container{
+    margin-left: 120px;
+  }
+  .next-button{
+    margin-left: 130px;
+  }
+}
+@media only screen and (max-width: 956px){
+  .picture{
+    width: 30%;
+  }
+  .order{
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 668px) {
+  .main{
+    padding-left: 10px;
+  }
+  .picture{
+    width: 0;
+  }
+  .total-container{
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  .back-next{
+    width: 100%;
+  }
+  .next-button{
+    margin-left: 170%;
+  }
+  .order{
+    padding: 0;
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 400px){
+  .order{
+    padding: 0;
+    width: 80%;
+  }
+  .next-button{
+    margin-left: 130%;
+  }
+}
+@media only screen and (max-width: 365px){
+  .buttons{
+    margin-left: 5px;
+    width: 35%;
+  }
+  .next-button{
+    margin-left: 80%;
+  }
+}

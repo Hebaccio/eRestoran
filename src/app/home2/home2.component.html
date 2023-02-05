@@ -1,0 +1,64 @@
+<app-navbar></app-navbar>
+
+<div class="main">
+
+  <div class="empty"></div>
+
+  <div class="main-nav">
+    <div class="nav-member">
+      <img src="https://rbarcrossplains.com/wp-content/uploads/2019/08/menu-wednesday.jpg" (click)="OpenMenu()">
+      <div class="centered" (click)="OpenMenu()">Menu</div>
+    </div>
+    <div class="nav-member">
+      <img src="http://www.restaurantnews.com/wp-content/uploads/2014/09/Report-47-percent-of-Meals-Are-Eaten-Alone-at-Restaurants.jpg" (click)="OpenProfile()">
+      <div class="centered" (click)="OpenProfile()">Profile</div>
+    </div>
+    <div class="nav-member">
+      <img src="https://3.files.edl.io/8236/18/06/14/225536-5c661e78-ac8f-44fb-bb9a-c103a0d90add.jpg" (click)="OpenOrders()">
+      <div class="centered" (click)="OpenOrders()">Orders</div>
+    </div>
+  </div>
+
+  <div class="about-us">
+    <h1>About us:</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+      It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+      and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    <br><br>
+    <h2>Contact information:</h2><br>
+    <div class="infocontainer">
+      <h3>Phone: </h3><p class="info">033/658-049</p>
+    </div>
+    <div class="infocontainer">
+      <h3>E-Mail: </h3><p class="info">Sarajlije@gmail.com</p>
+    </div>
+  </div>
+
+  <div class="location-div">
+    <h1>Locations:</h1>
+    <p>(Kliknite na sliku da vas odvede na Google Maps)</p>
+    <div class="location-container">
+      <h3 class="lokacija">Sarajevo, željeznička stanica</h3>
+      <img src="https://images.doza.network/www.doznajemo.com/728x546/bbb662a0fa5011e8b936a7f9781d173a.png" class="img-lokacija"
+           (click)="goToLink('https://www.google.com/maps/place/%C4%86evabd%C5%BEinica+%22Zmaj+%E2%80%9C+stanica/@43.8592755,18.3989461,259m/data=!3m1!1e3!4m5!3m4!1s0x4758c9243cbd0f6f:0xc60f9d635bbc2b72!8m2!3d43.8589427!4d18.3992162')">
+    </div>
+    <div class="location-container">
+      <h3 class="lokacija">Mostarsko raskršće</h3>
+      <img src="https://www.hotelcontact.net/image/bosnia-and-herzegovina/federation-of-bosnia-herzegovina/sarajevo/mostarlic-hadzici-1608385341.jpg" class="img-lokacija"
+           (click)="goToLink('https://www.google.com/maps/place/Mostarli%C4%87/@43.8501849,18.2378666,183m/data=!3m2!1e3!4b1!4m8!3m7!1s0x475f35328ae478d9:0xe166b45524f55ea7!5m2!4m1!1i2!8m2!3d43.8502043!4d18.2384293')">
+    </div>
+    <div class="location-container">
+      <h3 class="lokacija">Sarajevo, Socijalno</h3>
+      <img src="https://media-cdn.tripadvisor.com/media/photo-s/14/ed/2e/d1/front-of-the-building.jpg" class="img-lokacija"
+           (click)="goToLink('https://www.google.com/maps/place/Chipas+Concept/@43.8548336,18.3887416,518m/data=!3m1!1e3!4m12!1m6!3m5!1s0x4758c8cf15cb8d95:0xdd9f78a5ad24b700!2sChipas!8m2!3d43.8593535!4d18.4251334!3m4!1s0x0:0x8825f335527a1d6e!8m2!3d43.8551434!4d18.3885166')">
+    </div>
+  </div>
+
+  <div class="empty"></div>
+
+</div>
+
+<app-footer></app-footer>

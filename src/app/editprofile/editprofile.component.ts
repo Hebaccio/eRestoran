@@ -14,6 +14,7 @@ export class EditprofileComponent {
 
   passwordType1: string = 'password';
   passwordShown: boolean = false;
+  Count: number = 0;
 
   public togglePassword1(){
     if(this.passwordShown){
@@ -29,6 +30,10 @@ export class EditprofileComponent {
     this.router.navigateByUrl("update-password-username");
   }
 
-
-
+  Click1() {
+    this.Count=1;
+  }
+  Click2() {
+    this.router.navigateByUrl("profile");
+  }
 }

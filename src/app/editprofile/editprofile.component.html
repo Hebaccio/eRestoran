@@ -6,15 +6,18 @@
     <h2>Update profile details</h2>
     <div class="details">
       <label class="label">Email:</label>
-      <input class="input"/>
+      <input class="input" value="hebibovichh@gmail.com"/>
     </div>
     <div class="details">
       <label class="label">Username:</label>
-      <input class="input"/>
+      <div *ngIf="Count==1">
+        <label class="label2">Username alreay in use!</label>
+      </div>
+      <input class="input"  value="Hebaccio"/>
     </div>
     <div class="details">
       <label class="label">Phone number:</label>
-      <input class="input"/>
+      <input class="input"  value="0644449816"/>
     </div>
     <div class="swap">
       <p>Enter your password so we can confirm it's you</p>
@@ -25,7 +28,7 @@
       <label class="labeleye" (click)="togglePassword1()">👁️</label>
     </div>
     <div class="btncontainer">
-      <button class="btn">Save</button>
+      <button class="btn" (click)="Click1()">Save</button>
     </div>
   </div>
 </div>
