@@ -9,10 +9,13 @@ import {Router} from "@angular/router";
 export class OrderViewComponent {
   kolicina1:number=1;
   kolicina2:number=1;
+  kolicina3:number=1;
   prikaziOrder1:boolean=true;
   prikaziOrder2:boolean=true;
-  total1:boolean=true;
+  prikaziOrder3:boolean=true;
+  total1:boolean=false;
   total2:boolean=false;
+  total3:boolean=true;
 
   constructor(private router: Router) {
   }
@@ -41,8 +44,6 @@ export class OrderViewComponent {
   }
   povecajKolicinu1() {
     this.kolicina1 = this.kolicina1 + 1;
-    this.total2=true;
-    this.total1=false;
   }
   povecajKolicinu2() {
     this.kolicina2 = this.kolicina2 + 1;
@@ -57,5 +58,29 @@ export class OrderViewComponent {
   cancelOrder() {
     confirm('Are you sure you want to cancel?');
     this.router.navigateByUrl('menu');
+  }
+
+  smanjiKolicinu3() {
+    if(this.kolicina3==1)
+      return;
+    else {
+      this.kolicina3 = this.kolicina3 - 1;
+      this.total1=false;
+      this.total2=false;
+      this.total3=true;
+    }
+  }
+  povecajKolicinu3() {
+    this.kolicina3 = this.kolicina3 + 1;
+    this.total1=false;
+    this.total2=true;
+    this.total3=false;
+  }
+
+  ukloni3() {
+    this.prikaziOrder3=false;
+    this.total1=true;
+    this.total2=false;
+    this.total3=false;
   }
 }

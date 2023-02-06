@@ -4,6 +4,38 @@
     <div class="title">
       <h3>Order number 3</h3>
     </div>
+    <div class="order-container" *ngIf="prikaziOrder3">
+      <div class="order">
+        <div class="picture">
+          <img src="https://www.kitchensanctuary.com/wp-content/uploads/2020/08/Easy-Chicken-Curry-square-FS-117-500x500.jpg">
+        </div>
+        <div class="info">
+          <div class="desc">
+            <h4>Curry chicken</h4>
+            <p>chicken, onion, curry sauce, rice</p>
+          </div>
+          <div class="remove-ing2">
+            <p>Remove ingredients</p>
+            <select class="select" id="ingredients3">
+              <option class="izbor" value="None">None</option>
+              <option class="izbor" value="Rice">Rice</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="add-remove">
+          <button class="remove" (click)="smanjiKolicinu3()">-</button>
+          <div class="number">
+            <p>{{kolicina3}}</p>
+          </div>
+          <button class="add" (click)="povecajKolicinu3()">+</button>
+        </div>
+        <div class="delete-container">
+          <button class="delete" (click)="ukloni3()">Remove</button>
+        </div>
+      </div>
+    </div>
     <div class="order-container" *ngIf="prikaziOrder1">
       <div class="order">
         <div class="picture">
@@ -81,7 +113,10 @@
       <h4 style="font-weight: bold">Total: 21.00 KM</h4>
     </div>
     <div class="total-container" *ngIf="total2">
-      <h4 style="font-weight: bold">Total: 34.50 KM</h4>
+      <h4 style="font-weight: bold">Total: 46.00 KM</h4>
+    </div>
+    <div class="total-container" *ngIf="total3">
+      <h4 style="font-weight: bold">Total: 33.50 KM</h4>
     </div>
   </div>
   <div class="back-next">

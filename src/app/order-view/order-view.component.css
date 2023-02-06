@@ -199,9 +199,33 @@
 .next-button:active{
   filter: brightness(120%);
 }
-@media only screen and (min-width: 1815px){
+@media only screen and (min-width: 2431px) and (max-width: 2560px){
   .main{
-    padding-left: 35%;
+    padding-left: 30%;
+    padding-right: 0;
+  }
+  .total-container{
+    margin-left: 400px;
+  }
+  .next-button{
+    margin-left: 420px;
+  }
+}
+@media only screen and (min-width: 2200px) and (max-width: 2431px){
+  .main{
+    padding-left: 30%;
+    padding-right: 0;
+  }
+  .total-container{
+    margin-left: 350px;
+  }
+  .next-button{
+    margin-left: 370px;
+  }
+}
+@media only screen and (min-width: 2000px) and (max-width: 2100px){
+  .main{
+    padding-left: 30%;
     padding-right: 0;
   }
   .total-container{
@@ -211,16 +235,76 @@
     margin-left: 320px;
   }
 }
-@media only screen and (max-width: 1815px){
+@media only screen and (min-width: 2100px) and (max-width: 2200px){
   .main{
     padding-left: 30%;
     padding-right: 0;
   }
   .total-container{
-    margin-left: 150px;
+    margin-left: 310px;
   }
   .next-button{
-    margin-left: 170px;
+    margin-left: 330px;
+  }
+}
+@media only screen and (min-width: 1915px) and (max-width: 2000px) {
+  .main{
+    padding-left: 30%;
+    padding-right: 0;
+  }
+  .total-container{
+    margin-left: 280px;
+  }
+  .next-button{
+    margin-left: 300px;
+  }
+}
+@media only screen and (min-width: 1815px) and (max-width: 1915px) {
+  .main{
+    padding-left: 30%;
+    padding-right: 0;
+  }
+  .total-container{
+    margin-left: 250px;
+  }
+  .next-button{
+    margin-left: 270px;
+  }
+}
+@media only screen and (min-width: 1785px) and (max-width: 1815px) {
+  .main{
+    padding-left: 30%;
+    padding-right: 0;
+  }
+  .total-container{
+    margin-left: 240px;
+  }
+  .next-button{
+    margin-left: 260px;
+  }
+}
+@media only screen and (min-width: 1655px) and (max-width: 1785px) {
+  .main{
+    padding-left: 30%;
+    padding-right: 0;
+  }
+  .total-container{
+    margin-left: 230px;
+  }
+  .next-button{
+    margin-left: 240px;
+  }
+}
+@media only screen and (min-width: 1506px) and (max-width: 1579px) {
+  .main{
+    padding-left: 30%;
+    padding-right: 0;
+  }
+  .total-container{
+    margin-left: 180px;
+  }
+  .next-button{
+    margin-left: 190px;
   }
 }
 @media only screen and (max-width: 1390px){
