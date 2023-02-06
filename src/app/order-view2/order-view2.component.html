@@ -1,0 +1,57 @@
+<app-navbar2></app-navbar2>
+<div class="main">
+  <div class="container">
+    <div class="title">
+      <h3>Order number 3</h3>
+    </div>
+    <div class="order-container" *ngIf="prikaziOrder1">
+      <div class="order">
+        <div class="picture">
+          <img src="https://www.elitetrainingfacility.ca/content/uploads/Ham-Tomato-Pepper-Omelette-at-Elite-Training-Facility-500x500.jpg">
+        </div>
+        <div class="info">
+          <div class="desc">
+            <h4>Omelette with ham and cheese</h4>
+            <p>3 eggs, turkey ham, Edamer cheese, tomatoes</p>
+          </div>
+          <div class="remove-ing1">
+            <p>Remove ingredients</p>
+            <select class="select" id="ingredients1">
+              <option class="izbor" value="None">None</option>
+              <option class="izbor" value="Tomato">Tomato</option>
++            </select>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="add-remove">
+          <button class="remove" (click)="smanjiKolicinu1()">-</button>
+          <div class="number">
+            <p>{{kolicina1}}</p>
+          </div>
+          <button class="add" (click)="povecajKolicinu1()">+</button>
+        </div>
+        <div class="delete-container">
+          <button class="delete" (click)="ukloni1()">Remove</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cancel-total">
+    <div class="cancel-container">
+      <button class="cancel">Cancel order</button>
+    </div>
+    <div class="total-container">
+      <h4 style="font-weight: bold">Total: 5.50 KM</h4>
+    </div>
+  </div>
+  <div class="back-next">
+    <div class="back">
+      <button class="back-button" (click)="goBack()">Back</button>
+    </div>
+    <div class="next">
+      <button class="next-button" (click)="goNext()">Order</button>
+    </div>
+  </div>
+</div>
+<app-footer2></app-footer2>

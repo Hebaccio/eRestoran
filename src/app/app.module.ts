@@ -18,9 +18,12 @@ import { UpdatepasswordComponent } from './updatepassword/updatepassword.compone
 import { OrderConfirmComponent } from './order-confirm/order-confirm.component';
 import { OrderViewComponent } from './order-view/order-view.component';
 import { OrdersComponent } from './orders/orders.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { Home2Component } from './home2/home2.component';
 import { Profile2Component } from './profile2/profile2.component';
+import { OrderView2Component } from './order-view2/order-view2.component';
+import { OrderConfirm2Component } from './order-confirm2/order-confirm2.component';
+import { Orders2Component } from './orders2/orders2.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +45,9 @@ import { Profile2Component } from './profile2/profile2.component';
     OrdersComponent,
     Home2Component,
     Profile2Component,
+    OrderView2Component,
+    OrderConfirm2Component,
+    Orders2Component,
   ],
     imports: [
         BrowserModule,
@@ -56,10 +62,14 @@ import { Profile2Component } from './profile2/profile2.component';
             {path: 'update-password-email', component: UpdatepasswordComponent},
             {path: 'edit-profile', component: EditprofileComponent},
             {path: 'order-confirm', component: OrderConfirmComponent},
+            {path: 'order-confirm2', component: OrderConfirm2Component},
             {path: 'order-view', component: OrderViewComponent},
+            {path: 'order-view2', component: OrderView2Component},
             {path: 'orders', component: OrdersComponent},
+            {path: 'orders2', component: Orders2Component},
         ], {scrollPositionRestoration: 'enabled'}),
         ReactiveFormsModule,
+        FormsModule,
     ],
   providers: [],
   bootstrap: [AppComponent]

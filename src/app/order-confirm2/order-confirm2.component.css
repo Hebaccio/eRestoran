@@ -249,18 +249,18 @@
     margin-right: 100px;
   }
 }
- @media only screen and (max-width: 1133px){
-   .main{
-     padding-left: 2%;
-     padding-right: 2%;
-   }
-   .order-info{
-     margin-left: 30px;
-   }
-   .person-info{
-     margin-right: 50px;
-   }
- }
+@media only screen and (max-width: 1133px){
+  .main{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .order-info{
+    margin-left: 30px;
+  }
+  .person-info{
+    margin-right: 50px;
+  }
+}
 @media only screen and (max-width: 900px){
   .person-info{
     margin-right: 5px;

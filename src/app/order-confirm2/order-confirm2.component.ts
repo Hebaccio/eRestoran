@@ -1,13 +1,13 @@
-import {Component, Inject} from '@angular/core';
-import {FormBuilder, FormControl, FormGroup, isFormGroup, Validators} from "@angular/forms";
+import { Component } from '@angular/core';
+import {FormBuilder} from "@angular/forms";
 import {Router} from "@angular/router";
 
 @Component({
-  selector: 'app-order-confirm',
-  templateUrl: './order-confirm.component.html',
-  styleUrls: ['./order-confirm.component.css']
+  selector: 'app-order-confirm2',
+  templateUrl: './order-confirm2.component.html',
+  styleUrls: ['./order-confirm2.component.css']
 })
-export class OrderConfirmComponent {
+export class OrderConfirm2Component {
   Comment: string = 'Comment';
   show: boolean= false;
   details: boolean=false;
@@ -20,7 +20,7 @@ export class OrderConfirmComponent {
   patternDate="12/25";
   noDate:boolean=false;
 
-  constructor(private fb: FormBuilder, private router : Router) {
+  constructor(private fb: FormBuilder, private router: Router) {
   }
 
   showMore() {
@@ -42,7 +42,6 @@ export class OrderConfirmComponent {
 
   confirmOrder() {
     alert('Order confirmed!');
-    this.router.navigateByUrl('orders');
   }
 
   grayOut() {

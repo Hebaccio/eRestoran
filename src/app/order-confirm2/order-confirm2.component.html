@@ -8,18 +8,14 @@
       </div>
       <div class="order-items">
         <div class="item">
-          <h4>Mexican chicken (1x)</h4>
-          <p>13.50 KM</p>
-        </div>
-        <div class="item">
-          <h4>Classic burger (1x)</h4>
-          <p>7.50 KM</p>
+          <h4>Omelette with ham and cheese (1x)</h4>
+          <p>5.50 KM</p>
         </div>
       </div>
       <div class="order-total">
-        <p>Order: 21.00 KM</p>
+        <p>Order: 5.50 KM</p>
         <p>Delivery: 3.00 KM</p>
-        <p style="font-weight: bold">Total: 24.00 KM</p>
+        <p style="font-weight: bold">Total: 8.50 KM</p>
       </div>
     </div>
     <div class="comment-container">
@@ -40,7 +36,7 @@
         <h3>Payment details</h3>
         <div class="card-info">
           <p>Card number</p>
-            <input name='cardInput' class="input-card" (input)="checkCard($any($event.target).value)" placeholder="XXXX-XXXX-XXXX-XXXX">
+          <input name='cardInput' class="input-card" (input)="checkCard($any($event.target).value)" placeholder="XXXX-XXXX-XXXX-XXXX">
           <div *ngIf="noCard">
             Card is not valid.
           </div>

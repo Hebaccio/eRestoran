@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
+import {OrderView2Component} from "../order-view2/order-view2.component";
 
 @Component({
   selector: 'app-menu',

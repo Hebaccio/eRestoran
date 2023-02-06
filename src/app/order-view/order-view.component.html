@@ -40,19 +40,21 @@
     <div class="order-container" *ngIf="prikaziOrder2">
       <div class="order">
         <div class="picture">
-          <img src="https://sweetpeasandsaffron.com/wp-content/uploads/2019/04/Crunchy-Rainbow-Thai-Salad-4-500x500.jpg">
+          <img src="https://www.thewholesomedish.com/wp-content/uploads/2019/04/The-Best-Classic-Hamburgers-550-500x500.jpg">
         </div>
         <div class="info">
           <div class="desc">
-            <h4>Thai salad</h4>
-            <p>napa cabbage, red cabbage, peanuts, peppers</p>
+            <h4>Classic burger</h4>
+            <p>beef, onion, pickles, lettuce, ketchup, mustard, tomato</p>
           </div>
           <div class="remove-ing2">
             <p>Remove ingredients</p>
             <select class="select" id="ingredients2">
               <option class="izbor" value="None">None</option>
-              <option class="izbor" value="Peanuts">Peanuts</option>
-              <option class="izbor" value="Sesame oil">Sesame oil</option>
+              <option class="izbor" value="Onions">Peanuts</option>
+              <option class="izbor" value="Tomato">Tomato</option>
+              <option class="izbor" value="Ketchup">Ketchup</option>
+              <option class="izbor" value="Mustard">Mustard</option>
             </select>
           </div>
         </div>
@@ -73,10 +75,13 @@
   </div>
   <div class="cancel-total">
     <div class="cancel-container">
-      <button class="cancel">Cancel order</button>
+      <button class="cancel" (click)="cancelOrder()">Cancel order</button>
     </div>
-    <div class="total-container">
-      <h4 style="font-weight: bold">Total: 22.00 KM</h4>
+    <div class="total-container" *ngIf="total1">
+      <h4 style="font-weight: bold">Total: 21.00 KM</h4>
+    </div>
+    <div class="total-container" *ngIf="total2">
+      <h4 style="font-weight: bold">Total: 34.50 KM</h4>
     </div>
   </div>
   <div class="back-next">

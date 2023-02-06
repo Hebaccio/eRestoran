@@ -2,17 +2,15 @@ import { Component } from '@angular/core';
 import {Router} from "@angular/router";
 
 @Component({
-  selector: 'app-order-view',
-  templateUrl: './order-view.component.html',
-  styleUrls: ['./order-view.component.css']
+  selector: 'app-order-view2',
+  templateUrl: './order-view2.component.html',
+  styleUrls: ['./order-view2.component.css']
 })
-export class OrderViewComponent {
+export class OrderView2Component {
   kolicina1:number=1;
   kolicina2:number=1;
   prikaziOrder1:boolean=true;
   prikaziOrder2:boolean=true;
-  total1:boolean=true;
-  total2:boolean=false;
 
   constructor(private router: Router) {
   }
@@ -27,11 +25,8 @@ export class OrderViewComponent {
   smanjiKolicinu1() {
     if(this.kolicina1==1)
       return;
-    else {
+    else
       this.kolicina1 = this.kolicina1 - 1;
-      this.total1=true;
-      this.total2=false;
-    }
   }
   smanjiKolicinu2() {
     if(this.kolicina2==1)
@@ -41,8 +36,6 @@ export class OrderViewComponent {
   }
   povecajKolicinu1() {
     this.kolicina1 = this.kolicina1 + 1;
-    this.total2=true;
-    this.total1=false;
   }
   povecajKolicinu2() {
     this.kolicina2 = this.kolicina2 + 1;
@@ -53,7 +46,6 @@ export class OrderViewComponent {
   ukloni2() {
     this.prikaziOrder2=false;
   }
-
   cancelOrder() {
     confirm('Are you sure you want to cancel?');
     this.router.navigateByUrl('menu');
