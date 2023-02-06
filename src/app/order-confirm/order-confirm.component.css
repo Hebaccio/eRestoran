@@ -6,6 +6,9 @@
   padding-left: 15%;
   padding-right: 15%;
 }
+.regex{
+  color: red;
+}
 .order-info{
   height: 100%;
   display: block;

@@ -41,7 +41,7 @@
         <div class="card-info">
           <p>Card number</p>
             <input name='cardInput' class="input-card" (input)="checkCard($any($event.target).value)" placeholder="XXXX-XXXX-XXXX-XXXX">
-          <div *ngIf="noCard">
+          <div *ngIf="noCard" class="regex">
             Card is not valid.
           </div>
         </div>
@@ -49,7 +49,7 @@
           <div class="date">
             <p>Expiration date</p>
             <input name="dateInput" class="input-date" (input)="checkDate($any($event.target).value)" placeholder="MM/YY">
-            <div *ngIf="noDate">
+            <div *ngIf="noDate" class="regex">
               Date is not valid.
             </div>
           </div>
@@ -67,7 +67,7 @@
         <h3>Payment details</h3>
         <div class="card-info">
           <p>Card number</p>
-          <input class="input-card" placeholder="Valid card number">
+          <input class="input-card" placeholder="XXXX-XXXX-XXXX-XXXX">
         </div>
         <div class="date-code">
           <div class="date">
