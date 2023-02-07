@@ -134,6 +134,10 @@
   margin-bottom: 5px;
   margin-left: 10px;
 }
+.code p{
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
 .owner-info p{
   margin-bottom: 5px;
   margin-left: 10px;
@@ -319,6 +323,32 @@
     margin-left: 0;
   }
   .date p{
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .order{
+    margin-right: 5px;
+    width: 87%;
+  }
+  .comment-container{
+    width: 100%;
+  }
+  .person-info{
+    margin-right: 0;
+    width: 100%;
+  }
+  .date{
+    margin-left: 15px;
+  }
+  .date p{
+    text-align: left;
+    margin-left: 20px;
+  }
+  .code{
+    margin-left: 80px;
+  }
+  .code p{
     margin-left: 0;
   }
 }

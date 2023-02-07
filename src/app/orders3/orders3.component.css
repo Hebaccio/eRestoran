@@ -70,13 +70,25 @@
   .order{
     display: block;
   }
+  .order-container h3{
+    margin-left: 10px;
+  }
   .date{
-    margin-left: 0;
+    margin-left: 50px;
   }
   .more{
-    margin-left: 0;
+    margin-left: 55px;
+  }
+  .more2{
+    margin-left: 55px;
+  }
+  .price{
+    margin-left: -280px;
   }
   .main{
     height: fit-content;
+  }
+  .items{
+    margin-left: 0px;
   }
 }

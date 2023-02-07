@@ -354,8 +354,20 @@
     padding: 0;
     width: 80%;
   }
+  .buttons{
+    margin-left: 5px;
+  }
   .next-button{
     margin-left: 130%;
+  }
+  .remove-ing1 p{
+    padding-right: 15px;
+  }
+  .remove-ing2 p{
+    padding-right: 15px;
+  }
+  .remove-ing3 p{
+    padding-right: 15px;
   }
 }
 @media only screen and (max-width: 365px){
