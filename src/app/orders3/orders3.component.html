@@ -1,0 +1,104 @@
+<app-navbar2></app-navbar2>
+<div class="main">
+  <div class="content">
+    <h2>Your Orders</h2>
+    <div class="order-container">
+      <h3>Order number 1</h3>
+      <div class="order">
+        <div class="date">
+          <p>02. 01. 2023.</p>
+        </div>
+        <div class="price">
+          <p *ngIf="total"  style="font-weight: bold">Total: 19.00 KM</p>
+          <div class="expand-items" *ngIf="more">
+            <div class="items">
+              <p>Classic burger (1x)</p>
+              <p>BBQ burger (1x)</p>
+            </div>
+            <p>--------------------------------</p>
+            <p>Order: 16.00 KM</p>
+            <p>Delivery: 3.00 KM</p>
+            <p style="font-weight: bold">Total: 19.00 KM</p>
+          </div>
+        </div>
+        <div class="more">
+          <button class="expand" (click)="openMore()">Expand</button>
+        </div>
+      </div>
+    </div>
+    <div class="order-container">
+      <h3>Order number 2</h3>
+      <div class="order">
+        <div class="date">
+          <p>11. 01. 2023.</p>
+        </div>
+        <div class="price">
+          <p *ngIf="total2" style="font-weight: bold">Total: 29.50 KM</p>
+          <div class="expand-items" *ngIf="more2">
+            <div class="items">
+              <p>Pasta bolognese (1x)</p>
+              <p>Honey chicken (1x)</p>
+              <p>Chocolate cake (2x)</p>
+            </div>
+            <p>--------------------------------</p>
+            <p>Order: 29.50 KM</p>
+            <p>Delivery: 0.00 KM</p>
+            <p style="font-weight: bold">Total: 29.50 KM</p>
+          </div>
+        </div>
+        <div class="more2">
+          <button class="expand" (click)="openMore2()">Expand</button>
+        </div>
+      </div>
+    </div>
+    <div class="order-container">
+      <h3>Order number 3</h3>
+      <div class="order">
+        <div class="date">
+          <p>07. 02. 2023.</p>
+        </div>
+        <div class="price">
+          <p *ngIf="total3" style="font-weight: bold">Total: 24.00 KM</p>
+          <div class="expand-items" *ngIf="more3">
+            <div class="items">
+              <p>Mexican chicken (1x)</p>
+              <p>Classic burger (1x)</p>
+            </div>
+            <p>--------------------------------</p>
+            <p>Order: 21.00 KM</p>
+            <p>Delivery: 3.00 KM</p>
+            <p style="font-weight: bold">Total: 24.00 KM</p>
+          </div>
+        </div>
+        <div class="more2">
+          <button class="expand" (click)="openMore3()">Expand</button>
+        </div>
+      </div>
+    </div>
+    <div class="order-container">
+      <h3>Order number 4</h3>
+      <div class="order">
+        <div class="date">
+          <p>07. 02. 2023.</p>
+        </div>
+        <div class="price">
+          <p *ngIf="total4" style="font-weight: bold">Total: 24.00 KM</p>
+          <div class="expand-items" *ngIf="more4">
+            <div class="items">
+              <p>Pasta pomodoro basilico (1x)</p>
+              <p>Cheesecake (1x)</p>
+            </div>
+            <p>--------------------------------</p>
+            <p>Order: 12.50 KM</p>
+            <p>Delivery: 3.00 KM</p>
+            <p style="font-weight: bold">Total: 15.50 KM</p>
+          </div>
+        </div>
+        <div class="more2">
+          <button class="expand" (click)="openMore4()">Expand</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer2></app-footer2>

@@ -255,7 +255,7 @@
     margin-left: 15px;
   }
 }
-@media only screen and (max-width: 390px){
+@media only screen and (max-width: 400px){
   .add-button{
     height: 50px;
     width: 50px;
@@ -272,5 +272,55 @@
   }
   .photo-container{
     width: 50%;
+  }
+  .menu-item-container{
+    height: fit-content;
+  }
+  .view-order{
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: 5px;
+    padding-bottom: 10px;
+  }
+  .order-button{
+    padding: 5px 10px 5px 10px;
+  }
+  .menu-content1{
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+  .menu-content2{
+    width: 100%;
+  }
+  .menu-content3{
+    width: 100%;
+  }
+  .menu-content4{
+    width: 100%;
+  }
+  .menu-content5{
+    width: 100%;
+  }
+  .menu-content6{
+    width: 100%;
+  }
+  .menu-content7{
+     width: 100%;
+  }
+  .menu-content8{
+      width: 100%;
+  }
+  .menu-content9{
+    width: 100%;
+  }
+  .menu-content10{
+    width: 100%;
+  }
+  .menu-content11{
+    width: 100%;
+  }
+  .menu-content11{
+    width: 100%;
   }
 }

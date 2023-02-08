@@ -24,6 +24,7 @@ import { Profile2Component } from './profile2/profile2.component';
 import { OrderView2Component } from './order-view2/order-view2.component';
 import { OrderConfirm2Component } from './order-confirm2/order-confirm2.component';
 import { Orders2Component } from './orders2/orders2.component';
+import { Orders3Component } from './orders3/orders3.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { Orders2Component } from './orders2/orders2.component';
     OrderView2Component,
     OrderConfirm2Component,
     Orders2Component,
+    Orders3Component,
   ],
     imports: [
         BrowserModule,
