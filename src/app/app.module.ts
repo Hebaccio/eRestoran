@@ -53,7 +53,7 @@ import { Orders2Component } from './orders2/orders2.component';
         BrowserModule,
         RouterModule.forRoot([
             {path: '', redirectTo: 'home', pathMatch: 'full'},
-            {path: 'home', component: Home2Component},//HERE
+            {path: 'home', component: HomeComponent},//HERE
             {path: 'profile', component: ProfileComponent},//HERE
             {path: 'menu', component: MenuComponent},
             {path: 'log-in', component: LogInComponent},
@@ -63,7 +63,7 @@ import { Orders2Component } from './orders2/orders2.component';
             {path: 'edit-profile', component: EditprofileComponent},
             {path: 'order-confirm', component: OrderConfirmComponent},
             {path: 'order-view', component: OrderViewComponent},
-            {path: 'orders', component: Orders2Component},
+            {path: 'orders', component: OrdersComponent},
         ], {scrollPositionRestoration: 'enabled'}),
         ReactiveFormsModule,
         FormsModule,

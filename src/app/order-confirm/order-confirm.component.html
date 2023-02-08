@@ -4,22 +4,22 @@
     <div class="order">
       <div class="order-title">
         <h3>Order number 3</h3>
-        <h4>06. 02. 2023.</h4>
+        <h4>07. 02. 2023.</h4>
       </div>
       <div class="order-items">
         <div class="item">
-          <h4>Mexican chicken (1x)</h4>
-          <p>13.50 KM</p>
+          <h4>Pasta pomodoro basilico (1x)</h4>
+          <p>9.50 KM</p>
         </div>
         <div class="item">
-          <h4>Classic burger (1x)</h4>
-          <p>7.50 KM</p>
+          <h4>Cheesecake (1x)</h4>
+          <p>3.00 KM</p>
         </div>
       </div>
       <div class="order-total">
-        <p>Order: 21.00 KM</p>
+        <p>Order: 12.50 KM</p>
         <p>Delivery: 3.00 KM</p>
-        <p style="font-weight: bold">Total: 24.00 KM</p>
+        <p style="font-weight: bold">Total: 15.50 KM</p>
       </div>
     </div>
     <div class="comment-container">
@@ -40,7 +40,7 @@
         <h3>Payment details</h3>
         <div class="card-info">
           <p>Card number</p>
-            <input name='cardInput' class="input-card" (input)="checkCard($any($event.target).value)" placeholder="XXXX-XXXX-XXXX-XXXX">
+          <input name='cardInput' class="input-card" (input)="checkCard($any($event.target).value)" placeholder="XXXX-XXXX-XXXX-XXXX">
           <div *ngIf="noCard" class="regex">
             Card is not valid.
           </div>
@@ -53,7 +53,7 @@
               Date is not valid.
             </div>
           </div>
-          <div class="date">
+          <div class="code">
             <p>CV code</p>
             <input class="input-code" placeholder="CVC">
           </div>

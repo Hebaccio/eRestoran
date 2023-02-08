@@ -15,9 +15,9 @@ export class OrderConfirmComponent {
   noGray:boolean=true;
   pick: boolean=false;
   delivery: boolean=true;
-  patternCard="1234-1234-1234-1234";
+  patternCard="1234-5678-1234-5678";
   noCard:boolean=false;
-  patternDate="12/25";
+  patternDate="05/20";
   noDate:boolean=false;
 
   constructor(private fb: FormBuilder, private router : Router) {
